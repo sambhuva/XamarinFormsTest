@@ -1,0 +1,11 @@
+﻿<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="XamarinFormsTest.App" 
+             xmlns:local="clr-namespace:XamarinFormsTest;assembly=XamarinFormsTest"
+             xmlns:viewModel="clr-namespace:XamarinFormsTest.ViewModel;assembly=XamarinFormsTest">
+    <Application.Resources>
+        <ResourceDictionary>
+            <viewModel:ViewModelLocator x:Key="Locator"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
