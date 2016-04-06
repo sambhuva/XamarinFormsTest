@@ -6,5 +6,7 @@
         <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
         <Entry Placeholder="User Name" Text="{Binding UserName}"></Entry>
         <Entry IsPassword="True" Placeholder="Password" Text="{Binding Password}"></Entry>
+
+        <Button Text="Login" Command="{Binding LoginCommand}"></Button>
     </StackLayout>
 </ContentPage>
