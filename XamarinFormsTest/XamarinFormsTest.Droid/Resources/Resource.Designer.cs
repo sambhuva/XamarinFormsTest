@@ -26,6 +26,8 @@ namespace XamarinFormsTest.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::GalaSoft.MvvmLight.Resource.String.ApplicationName = global::XamarinFormsTest.Droid.Resource.String.ApplicationName;
+			global::GalaSoft.MvvmLight.Resource.String.Hello = global::XamarinFormsTest.Droid.Resource.String.Hello;
 		}
 		
 		public partial class Attribute

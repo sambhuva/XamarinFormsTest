@@ -16,6 +16,7 @@ namespace XamarinFormsTest.Droid
         {
             base.OnCreate(bundle);
 
+            AndroidBootstrap.Run();
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }

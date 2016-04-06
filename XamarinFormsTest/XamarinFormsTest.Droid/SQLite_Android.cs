@@ -11,12 +11,11 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using XamarinFormsTest.Services;
 
 namespace XamarinFormsTest.Droid
 {
-    [assembly: Dependency (typeof (SQLite_Android))]
-// ...
-public class SQLite_Android : ISQLite
+    public class SQLite_Android : ISQLite
     {
         public SQLite_Android() { }
         public SQLite.SQLiteConnection GetConnection()

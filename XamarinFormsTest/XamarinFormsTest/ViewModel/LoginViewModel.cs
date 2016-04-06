@@ -1,14 +1,21 @@
 ﻿using System.Windows.Input;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using XamarinFormsTest.Services;
 
 namespace XamarinFormsTest.ViewModel
 {
     public class LoginViewModel : ViewModelBase
     {
+        public LoginViewModel(ILoginManager loginManager)
+        {
+            _loginManager = loginManager;
+        }
+
         private string _password;
         private string _userName;
         private ICommand _loginCommand;
+        private ILoginManager _loginManager;
         public string MainText => "Login Page";
 
         public string Password
@@ -30,7 +37,7 @@ namespace XamarinFormsTest.ViewModel
 
         private void Login()
         {
-            throw new System.NotImplementedException();
+            var result = _loginManager.Login();
         }
     }
 }
