@@ -37,7 +37,7 @@ namespace XamarinFormsTest.ViewModel
 
         private void Login()
         {
-            var result = _loginManager.Login();
+            var result = _loginManager.LoginAsync();
         }
     }
 }
